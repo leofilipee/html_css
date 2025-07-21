@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserção de Mídia</title>
+</head>
+
+<body>
+
+    <h1>Imagens Dinâmicas</h1>
+    <hr>
+
+    <p>Você pode usar a tag picture para exibir imagens dinâmicas que se adaptam ao tamanho da tela.</p>
+
+    <picture>
+        <source media="(max-width: 350px)" srcset="img/pequena.jpg">
+        <source media="(max-width: 750px)" srcset="img/media.jpg">
+        <img src="img/grande.jpg" alt="Imagem adaptativa" style="width: 100%;">
+    </picture>
+
+    <p>
+        Esta imagem mudará dependendo do tamanho da tela do dispositivo. Se a tela for menor que 600px (como por
+        exemplo, em um dispositivo como um telemóvel), a imagem pequena será exibida. <br>
+        Se for entre 600px e 1200px (como em dispositivos como tablets), a imagem média será usada. <br>
+        Caso contrário, a imagem grande será mostrada (tipicamente presente em desktop, smart tv e outros dispositivos
+        com maior espaço de tela).
+    </p>
+
+    <p>
+        Você também pode usar a tag img com o atributo srcset para imagens dinâmicas. Por exemplo:
+    </p>
+
+    <img src="img/grande.jpg" srcset="img/pequena.jpg 350w, img/media.jpg 750w, img/grande.jpg 1200w"
+        alt="Imagem adaptativa" style="width: 100%;">
+
+    <p>
+        Neste caso, a imagem será escolhida com base na largura do dispositivo. Se a largura for menor que 600 pixels, a
+        imagem pequena será usada. Se for entre 600 e 1200 pixels, a imagem média será usada. Caso contrário, a imagem
+        grande será exibida.
+    </p>
+
+    <p>
+        O atributo srcset permite especificar diferentes versões da mesma imagem, cada uma com um tamanho diferente. O
+        navegador escolherá a imagem mais adequada com base na largura do dispositivo e na densidade de pixels da tela.
+        Isso é útil para otimizar o carregamento de imagens em diferentes dispositivos, garantindo que os usuários vejam
+        a melhor qualidade possível sem desperdiçar largura de banda.
+    </p>
+
+    <hr>
+
+    <h1>Áudio</h1>
+    <hr>
+
+    <p>Você pode usar a tag audio para adicionar áudio à sua página. Por exemplo:</p>
+
+    <audio controls>
+        <source src="audio/tlou2_unbound.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+
+    </audio>
+
+    <p>
+        Como podemos ver, ele adiciona o áudio para reprodução.
+    </p>
+
+    <hr>
+        <h1>Vídeo</h1>
+    <hr>
+
+    <p>Você pode usar a tag video para adicionar vídeos à sua página. Por exemplo:</p>
+
+    <video width="100%" controls>
+        <source src="video/borutovskawaki.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <p>
+        Como podemos ver, ele adiciona o vídeo para reprodução.
+    </p>
+
+    <hr>
+        <h1>Iframe</h1>
+    <hr>
+
+    <p>Você pode usar a tag iframe para incorporar outros sites ou conteúdos externos. Por exemplo:</p>
+
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="100%" height="315" frameborder="0"
+        allowfullscreen></iframe>
+    <p>
+        Este é um exemplo de um vídeo do YouTube incorporado na página. O iframe permite que você exiba conteúdo de
+        outros sites diretamente em sua página, como vídeos, mapas ou outros recursos interativos.
+    </p>
+
+    <h2>Mapa</h2>
+
+    <p>Você pode usar a tag iframe para incorporar um mapa do Google Maps. Por exemplo:</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99144103159!2d2.291901011935232!3d48.85837360058817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1spt-PT!2spt!4v1752338802010!5m2!1spt-PT!2spt"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>
+        Este é um exemplo de um mapa do Google Maps incorporado na página. O iframe permite que você exiba mapas
+        interativos diretamente em sua página, facilitando a localização de lugares e direções.
+    </p>
+
+    <h2>Vídeo do YouTube</h2>
+
+    <p>Você pode usar a tag iframe para incorporar um vídeo do YouTube. Por exemplo:</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kmcTEZTrsNg?si=UlFXhM0O2O1jn67Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        Vídeo Indisponível
+    </iframe>
+
+    <p>
+        Este é um exemplo de um vídeo do YouTube incorporado na página. O iframe permite que você exiba vídeos
+        interativos diretamente em sua página, proporcionando uma experiência rica para os usuários.
+    </p>
+
+    <p>
+        Dependendo do vídeo do YouTube que tu queres incorporar, o criador do vídeo pode ter desativado a opção de incorporação, o que significa que o vídeo não será exibido na sua página. Nesse caso, você verá uma mensagem indicando que o vídeo está indisponível para incorporação (é o caso do vídeo presente em cima quando falamos de Iframe).  <br>
+        Isso pode acontecer por várias razões, como restrições de direitos autorais ou configurações de privacidade do criador do vídeo. Se você encontrar esse problema, pode tentar entrar em contato com o criador do vídeo para obter mais informações ou procurar um vídeo alternativo que permita a incorporação. <br>
+        A melhor maneira de evitar esse problema é sempre verificar as configurações de incorporação do vídeo antes de tentar adicioná-lo à sua página. <br>
+        A melhor forma de adicionar um  vídeo do youtube é através do link de compartilhamento, que pode ser encontrado abaixo do vídeo. Basta clicar no botão "Compartilhar" e copiar o link fornecido. Em seguida, você pode colar esse link na tag iframe para incorporar o vídeo na sua página.
+    </p>
+
+    <h2>Vídeo do Vimeo</h2>
+
+    <p>Você pode usar a tag iframe para incorporar um vídeo do Vimeo. Por exemplo:</p>
+
+    <iframe src="https://player.vimeo.com/video/76979871?h=3c9f8b1d4e" width="640" height="360" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p>
+        Este é um exemplo de um vídeo do Vimeo incorporado na página. O iframe permite que você exiba vídeos
+        interativos diretamente em sua página, proporcionando uma experiência rica para os usuários.
+    </p>
+
+    <p>
+        Assim como no YouTube, o criador do vídeo pode ter desativado a opção de incorporação, o que significa que o vídeo não será exibido na sua página. Nesse caso, você verá uma mensagem indicando que o vídeo está indisponível para incorporação. Isso pode acontecer por várias razões, como restrições de direitos autorais ou configurações de privacidade do criador do vídeo.
+        Se você encontrar esse problema, pode tentar entrar em contato com o criador do vídeo para obter mais informações ou procurar um vídeo alternativo que permita a incorporação.
+        A melhor maneira de evitar esse problema é sempre verificar as configurações de incorporação do vídeo antes de tentar adicioná-lo à sua página.
+        A melhor forma de adicionar um vídeo do Vimeo é através do link de compartilhamento, que pode ser encontrado abaixo do vídeo. Basta clicar no botão "Compartilhar" e copiar o link fornecido. Em seguida, você pode colar esse link na tag iframe para incorporar o vídeo na sua página.
+    </p>
+
+    <hr>
+
+    <h1>Conclusão</h1>
+    <hr>
+
+    <p>
+        A inserção de mídia em páginas web é uma parte essencial do design moderno. As tags picture, img, audio, video e iframe permitem que você adicione imagens, áudio, vídeos e conteúdo externo de forma dinâmica e responsiva.
+        Essas ferramentas ajudam a criar experiências interativas e envolventes para os usuários, tornando suas páginas mais atraentes e informativas.
+        Lembre-se de sempre verificar as permissões de uso e as configurações de incorporação dos conteúdos que você deseja adicionar, garantindo que eles sejam exibidos corretamente em sua página.
+    </p>
+
+    
+    
+</body>
+
+</html>

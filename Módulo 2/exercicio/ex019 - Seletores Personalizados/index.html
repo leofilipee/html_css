@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 019 - Seletores Personalizáveis</title>
+</head>
+
+<body>
+
+    <h1>Exercício 019 - Seletores Personalizáveis</h1>
+    <hr>
+
+
+    <h2>Introdução</h2>
+
+    <p>Este exercício demonstra como criar seletores personalizados para aplicar estilos específicos a elementos HTML.
+    </p>
+
+    <style>
+        .custom-selector {
+            color: blue;
+            font-weight: bold;
+        }
+
+        #unique {
+            color: green;
+            font-style: italic;
+        }
+
+        .hover:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .hover {
+            color: black;
+        }
+
+        [data-custom] {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        [data-custom="value"] {
+            border: 2px solid blue;
+        }
+
+        [data-custom="another-value"] {
+            border: 2px dashed red;
+        }
+
+        .custom-selector:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .custom-selector:active {
+            color: purple;
+            font-style: italic;
+        }
+
+        .custom-selector:focus {
+            outline: 2px solid blue;
+        }
+
+        .custom-selector::before {
+            content: "Custom: ";
+            font-weight: normal;
+            color: gray;
+        }
+
+        .custom-selector::after {
+            content: " (selecionado)";
+            font-weight: normal;
+            color: gray;
+        }
+
+        .custom-selector:hover::before {
+            content: "Hover: Custom: ";
+            color: darkgray;
+        }
+
+        .custom-selector:hover::after {
+            content: " (hover selecionado)";
+            color: darkgray;
+        }
+    </style>
+
+    <p class="custom-selector">Este parágrafo usa um seletor personalizado.</p>
+    <p>Este parágrafo não usa o seletor personalizado.</p>
+
+    <h2>ID</h2>
+
+    <p id="unique">Este parágrafo tem um ID único.</p>
+
+    <p class="custom-selector" id="another-unique">Este parágrafo também tem um ID único e usa o seletor personalizado.
+    </p>
+
+    <p class="hover" id="hover-example">Este parágrafo tem um ID e não usa o seletor personalizado.</p>
+
+    <h2>Classes</h2>
+
+    <p class="custom-selector">Este parágrafo usa uma classe personalizada.</p>
+    <p class="hover">Este parágrafo não usa a classe personalizada.</p>
+
+    <h2>Seletores de Atributo</h2>
+
+    <p class="custom-selector" data-custom="value">Este parágrafo usa um seletor de atributo personalizado.</p>
+    <p class="hover" data-custom="another-value">Este parágrafo não usa o seletor de atributo personalizado.</p>
+
+
+</body>
+
+</html>
