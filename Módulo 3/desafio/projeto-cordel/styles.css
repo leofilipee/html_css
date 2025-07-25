@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        margin: 30px;
+    }
+
+}
+
+.cordel {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    margin: 20px 75% 20px 2%;
+}
+
+.bg-white .cordel {
+    background-color: transparent;
+    color: black
+}
+
+.img {
+    background-color: transparent;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
