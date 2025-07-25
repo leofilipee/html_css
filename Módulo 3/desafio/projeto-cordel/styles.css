@@ -1,6 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 100vh;
+    background-color: rgb(58, 58, 58);
 }
 
 header {
@@ -12,19 +19,31 @@ header {
     a {
         color: white;
         text-decoration: none;
+        font-weight: bolder;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     h1 {
         margin: 30px;
+        font-variant: small-caps;
     }
+
+}
+
+div {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
 
 }
 
 .cordel {
     background-color: gray;
     color: white;
-    padding: 20px;
-    margin: 20px 75% 20px 2%;
+    padding-left: 30px;
+    line-height: 2em;
 }
 
 .bg-white .cordel {
@@ -32,8 +51,9 @@ header {
     color: black
 }
 
-.img {
-    background-color: transparent;
+.img p{
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 500px;
 }
 
 footer {
