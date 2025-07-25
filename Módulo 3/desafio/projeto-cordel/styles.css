@@ -10,7 +10,6 @@
 html,
 body {
     min-width: 100vh;
-    background-color: rgb(58, 58, 58);
 }
 
 header {
@@ -27,7 +26,7 @@ header {
         &:hover {
             text-decoration: underline;
         }
-    }
+    }   
 
     h1 {
         margin: 30px;
@@ -44,7 +43,6 @@ div {
 }
 
 .cordel {
-    background-color: gray;
     color: white;
     padding-left: 30px;
     line-height: 2em;
@@ -55,11 +53,29 @@ div {
     color: black
 }
 
+.img {
+    box-shadow: inset 5px 5px 13px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
+
 .img p {
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.212);
     display: inline-block;
     padding: 20px;
     border-radius: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.img#img1 {
+    background-image: url(img/background001.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img#img2 {
+    background-image: url(img/background002.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 footer {
