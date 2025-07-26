@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 004</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 2px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        caption {
+            margin: 20px 0;
+        }
+
+        .header {
+            background-color: #3b3b3b;
+            color: #fff;
+        }
+
+        .section {
+            background-color: #3b3b3b;
+            color: #fff;
+            font-weight: bold;
+            
+            th {
+                text-align: left;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <caption>Primeira Tabela</caption>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+
+    </table>
+
+    <table>
+
+        <caption>Segunda Tabela</caption>
+
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+    <table>
+
+        <caption>Terceira Tabela</caption>
+
+        <tr class="header">
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplina</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr class="header">
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td>8</td>
+            <td>9</td>
+            <td>8.5</td>
+        </tr>
+
+        <tr>
+            <td>Física</td>
+            <td>8</td>
+            <td>9</td>
+            <td>8.5</td>
+        </tr>
+
+        <tr>
+            <td>Química</td>
+            <td>7</td>
+            <td>8</td>
+            <td>7.5</td>
+        </tr>
+
+        <tr>
+            <td>Biologia</td>
+            <td>9</td>
+            <td>10</td>
+            <td>9.5</td>
+        </tr>
+
+        <tr class="section">
+            <th colspan="4" scope="rowgroup">Média de Exatas</th>
+            <td>8.25</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <td>8</td>
+            <td>9</td>
+            <td>8.5</td>
+        </tr>
+
+        <tr>
+            <td>Geografia</td>
+            <td>8</td>
+            <td>9</td>
+            <td>8.5</td>
+        </tr>
+
+
+
+        <tr class="section">
+            <th colspan="4" scope="row">Média de Humanas</td>
+            <td>8.25</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
