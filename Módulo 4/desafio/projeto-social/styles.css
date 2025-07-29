@@ -52,3 +52,11 @@ section#redes-sociais img {
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+
+section#redes-sociais img:hover {
+    transform: scale(1.2);
+}
+
+section#redes-sociais img {
+    width: 50px;
+}
