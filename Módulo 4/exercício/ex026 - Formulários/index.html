@@ -7,6 +7,10 @@
     <title>Exercício 026 - Formulários</title>
 
     <style>
+        * {
+            font-family: poppins, sans-serif;
+        }
+
         form {
             position: relative;
             border: 1px solid #ccc;
@@ -43,8 +47,6 @@
             margin: 0 auto;
             margin-bottom: 10px;
         }
-
-
     </style>
 
 </head>
@@ -59,20 +61,21 @@
 
     <form action="/submit" method="post">
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required placeholder="Digite seu nome">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
         <label for="age">Idade:</label>
-        <input type="number" id="age" name="age" min="0" max="120">
+        <input type="number" id="age" name="age" min="0" max="120" placeholder="Digite sua idade">
 
         <button type="submit">Enviar</button>
 
     </form>
 
     <p>Você pode adicionar validação aos campos usando atributos como <code>required</code>, <code>min</code>,
-        <code>max</code>, etc.</p>
+        <code>max</code>, etc.
+    </p>
     <p>Além disso, você pode estilizar o formulário usando CSS para torná-lo mais atraente.</p>
 
 </body>
