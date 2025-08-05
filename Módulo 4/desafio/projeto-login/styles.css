@@ -86,10 +86,6 @@ form button#submit {
     margin-bottom: 15px;
 }
 
-form button#submit:hover {
-    background-color: #85009f;
-}
-
 form button#submit:active {
     background-color: #720088;
 }
@@ -98,11 +94,6 @@ form button#forgot {
     background-color: transparent;
     color: #4d005c;
     border: 2px solid #4d005c;
-}
-
-form button#forgot:hover {
-    background-color: #d5d5d5;
-    color: rgb(0, 0, 0);
 }
 
 form button#forgot:active {
