@@ -9,14 +9,19 @@ body {
     background-color: #7d0096;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container {
     background-color: white;
     height: 750px;
     width: 400px;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    transform: translateY(5%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.204);
 }
 
 div#img {
@@ -28,8 +33,7 @@ div#img {
 }
 
 div#form {
-    padding: 20px;
-
+    padding: 25px;
 }
 
 div#form h1 {
@@ -45,8 +49,7 @@ form .input-container {
     padding: 10px;
     border-radius: 10px;
     margin: 15px auto;
-    width: 90%;
-    position: relative;
+    width: 100%;
 }
 
 form .input-container i {
@@ -69,7 +72,7 @@ form .input-container input:focus {
 form button {
     margin: auto;
     display: block;
-    width: 90%;
+    width: 100%;
     padding: 15px;
     border: none;
     border-radius: 10px;
