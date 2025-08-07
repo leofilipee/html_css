@@ -108,7 +108,7 @@ form button#forgot:active {
     }
 
     .container {
-        height: 50vh;
+        height: 500px;
         width: 90vw;
         max-width: 1200px;
         display: flex;
