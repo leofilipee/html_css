@@ -19,10 +19,11 @@ main {
 .container {
     background-color: white;
     height: 750px;
-    width: 90%;
+    width: 90vw;
     max-width: 400px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.204);
+    overflow: hidden;
 }
 
 div#img {
@@ -30,7 +31,6 @@ div#img {
     background-size: cover;
     background-position: center;
     height: 40%;
-    border-radius: 30px 30px 0 0;
 }
 
 div#form {
@@ -108,7 +108,8 @@ form button#forgot:active {
 
     .container {
         height: 500px;
-        max-width: 800px;
+        width: 90vw;
+        max-width: 1200px;
         display: flex;
         flex-direction: row;
         justify-content: center;
