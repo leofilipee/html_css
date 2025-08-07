@@ -24,6 +24,7 @@ main {
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.204);
     overflow: hidden;
+    transition: width 0.3s, height 0.3s;
 }
 
 div#img {
